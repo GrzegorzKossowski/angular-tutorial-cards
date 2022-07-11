@@ -1,1 +1,7 @@
-test
+<app-card
+  *ngFor="let post of posts"
+  [title]="post.title"
+  [content]="post.content"
+  [imageUrl]="post.imageUrl"
+  [username]="post.username"
+></app-card>
